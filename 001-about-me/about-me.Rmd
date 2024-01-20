@@ -14,30 +14,47 @@ editor_options:
     wrap: 72
 ---
 
-# Who I am and where I came from like from canada or something
+# Who I Am and Where I Came From (like from PA and Canada or something)
 
-First off, replace "Insert Name Here" in the YAML header with your name.
-It has to be surrounded by double quotation marks. Briefly tell us a
-little background about yourself, and how you ended up becoming a
-student at CSU and taking this class. Put in a hypertext link to your
-undergraduate institution.
+I arrived at Colorado State University in 1992 (and am originally from rural PA near Gettysburg), after studying biology at the [University of Pennsylvania, BA 1981](https://www.bio.upenn.edu/), The [University of Alberta, Canada, M.Sc. 1985](https://www.ualberta.ca/biological-sciences/index.html), and [Florida State University, PhD 1990](https://www.bio.fsu.edu/)).  I am currently Professor and former department Chair of the [Biology Department](https://www.biology.colostate.edu/).
 
-Include a numbered list of your top-four favorite leisure activities,
-like this:
+I consider myself an evolutionary and population biologist, and have taught evolution and population genetics at both undergraduate and graduate levels.  Currently I'm greatly enjoying teaching LIFE 102 (Attributes of Living Systems) to Honors students.   
 
-1.  My favorite
-2.  Second favorite
-3.  third favorite
-4.  fourth favorite
+This life was a natural for me. We moved to PA from Canada when I was three years old, to a former egg farm on the Mason Dixon Line (the property boundary has one of the marble markers from the original survey in 1763-1767). I was partly feral as a kid, spending much time outdoors in the fields and forests surrounding our house and the nearby Tom's Creek, and in the nearby Blue Ridge Mountains.  My father was a philosophy professor who planted the seeds of skepticism in my mind, along with a love for Nature and the trees we transplanted on the property.  All are more-or-less still in place.
+
+
+I have promoted science education in Colorado as a charter member of the “Colorado Citizens for Science” advocacy group (now defunct), which supported teachers by tracking curriculum and science teaching standards for CO public schools.  I have written on the “creation-evolution debates” and on science education for the general public.  More recent writings have been on the relationship between evolution and medicine, and on the evolutionary history of the Darwin family of doctors.    
+
+
+I was fortunate to be part of design and construction of the new Biology Building, a 150,000 square foot comprehensive education and research facility. The Biology Building gives Biology a distinct home, a destination for hands-on learning in both classrooms and study areas, and state-of-the-art research laboratories.  The [Biology Building](http://www.biology.colostate.edu/new-building/) opened in Fall 2017. 
+
+
+My top-four favorite leisure activities:
+
+1.  Playing hockey
+2.  Gardening
+3.  Skiing, both downhill at resorts and touring on Cameron Pass
+4.  Doom-scrolling the internet, sometimes about railroad and mining history in Colorado 
 
 Include a picture (jpg or png) of yourself, to get some practice in
 inserting images into RMarkdown. See the example to see how that can be
 done. Note that JPEGs that include EXIF information might be incorrectly
 rotated. That is OK if you can't figure out how to fix it.
 
+Here are a few pictures of me, first with my family on the front porch in Toronto in 1961 (I'm on the bottom stair), and me doing field work n Mule deer about 10 years ago: 
+
+```{r me_pic, echo=FALSE, out.width="500px"}
+knitr::include_graphics(c("images/Antolincki Toronto 1962.jpg","images/Antolin with deer.jpg"), auto_pdf = TRUE)
+```
+
+
 # Research Interests
 
-Brief description of your research interests.
+My research is focused on evolution and genetics of infectious diseases, which also led to thinking about how evolution may be applied to the medical sciences.
+
+People in my lab have focused on the epidemiology of plague in Black-tailed prairie.  This is the same bacterial pathogen responsible for massive human epidemics in medieval Europe and Asia, what’s known as the Black Death in the 1300s.  Native to Asia, plague was accidentally introduced into the western U.S. in the early 1900s and now decimates wild rodent populations throughout the western half of the U.S., along with 10-15 human cases per year.  We have used genetic analyses to trace transmission pathways.  More recently we also started work on the genetics of chronic wasting disease in mule deer northern Colorado.  This neurodegenerative disease is similar to the “mad cow disease” in Europe, and is caused by a mis-folded infectious protein called a prion.  Again, we use genetic tools to trace transmission pathways (microsatellites and RAD-seq).
+
+My research tends to be interdisciplinary and collaborative, and I have the great fortune of having many colleagues here at Colorado State and with other agencies Fort Collins to help us understand epidemiology and evolution of infectious diseases in natural populations.
 
 ## Influential papers
 
