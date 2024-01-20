@@ -20,10 +20,10 @@ I arrived at Colorado State University in 1992 (and am originally from rural PA 
 
 I consider myself an evolutionary and population biologist, and have taught evolution and population genetics at both undergraduate and graduate levels.  Currently I'm greatly enjoying teaching LIFE 102 (Attributes of Living Systems) to Honors students.   
 
-This life was a natural for me. We moved to PA from Canada when I was three years old, to a former egg farm on the Mason Dixon Line (the property boundary has one of the marble markers from the original survey in 1763-1767). I was partly feral as a kid, spending much time outdoors in the fields and forests surrounding our house and the nearby Tom's Creek, and in the nearby Blue Ridge Mountains.  My father was a philosophy professor who planted the seeds of skepticism in my mind, along with a love for Nature and the trees we transplanted on the property.  All are more-or-less still in place.
+This life was a natural for me. We moved to PA from Canada when I was three years old, to a former egg farm on the Mason Dixon Line (the property boundary has one of the marble markers from the original survey in 1763-1767). I was partly feral as a kid, spending much time outdoors in the fields and forests surrounding our house and the nearby Tom's Creek, in view of the Blue Ridge Mountains.  My father was a philosophy professor who planted the seeds of skepticism in my mind, along with a love for Nature and the trees we transplanted to the property.  All are more-or-less still in place.
 
 
-I have promoted science education in Colorado as a charter member of the “Colorado Citizens for Science” advocacy group (now defunct), which supported teachers by tracking curriculum and science teaching standards for CO public schools.  I have written on the “creation-evolution debates” and on science education for the general public.  More recent writings have been on the relationship between evolution and medicine, and on the evolutionary history of the Darwin family of doctors.    
+As part of my public outreach to science education, I was a charter member of the “Colorado Citizens for Science” advocacy group (now defunct), which supported teachers by tracking curriculum and science teaching standards for CO public schools.  I have written several articles on the “creation-evolution debates” and on science education for the general public.  More recent writings have been on the relationship between evolution and medicine, and on the evolutionary history of the Darwin family of doctors [@antolin2011evolution].    
 
 
 I was fortunate to be part of design and construction of the new Biology Building, a 150,000 square foot comprehensive education and research facility. The Biology Building gives Biology a distinct home, a destination for hands-on learning in both classrooms and study areas, and state-of-the-art research laboratories.  The [Biology Building](http://www.biology.colostate.edu/new-building/) opened in Fall 2017. 
@@ -49,7 +49,7 @@ knitr::include_graphics(c("images/Antolincki Toronto 1962.jpg","images/Antolin w
 
 My research is focused on evolution and genetics of infectious diseases, which also leads to thinking about how evolution may be applied to the medical sciences.
 
-People in my lab have focused on the epidemiology of plague in Black-tailed prairie dogs.  This is the same bacterial pathogen responsible for massive human epidemics in medieval Europe and Asia, what’s known as the Black Death in the 1300s.  Native to Asia, plague was accidentally introduced into the western U.S. in the early 1900s and now decimates wild rodent populations throughout the western half of the U.S., along with 10-15 human cases per year.  We have used genetic analyses to trace transmission pathways.  
+People in my lab have focused on the epidemiology of plague in Black-tailed prairie dogs. This is the same bacterial pathogen responsible for massive human epidemics in medieval Europe and Asia, what’s known as the Black Death in the 1300s.  Native to Asia, plague was accidentally introduced into the western U.S. in the early 1900s and now decimates wild rodent populations throughout the western half of the U.S., along with 10-15 human cases per year. Along with studies of prairie dog population structure [@roach2001genetic], studies of transmission by fleas [c(@wilder2008oropsylla,@tripp2010flea)], we used a SNP-chip to demonstrate genetic identity of plague clones in CO relative to other samples from the western US: [@lowell2015single].   
 
 More recently we also started work on the genetics of chronic wasting disease in mule deer northern Colorado.  This neurodegenerative disease is similar to the “mad cow disease” in Europe, and is caused by a mis-folded infectious protein called a prion.  Again, we use genetic tools to trace transmission pathways (microsatellites and RAD-seq).
 
@@ -89,6 +89,8 @@ On the other hand, you can use `[@richardson1997bayesian]` if you do
 want it all in parentheses, like, "Reversible jump MCMC has been
 previously applied to the analysis of mixtures
 [@richardson1997bayesian]."
+
+
 
 ## The mathematics behind my research
 
