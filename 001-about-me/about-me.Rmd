@@ -36,12 +36,8 @@ My top-four favorite leisure activities:
 3.  Skiing, both downhill at resorts and touring on Cameron Pass
 4.  Doom-scrolling the internet, sometimes about railroad and mining history in Colorado 
 
-Include a picture (jpg or png) of yourself, to get some practice in
-inserting images into RMarkdown. See the example to see how that can be
-done. Note that JPEGs that include EXIF information might be incorrectly
-rotated. That is OK if you can't figure out how to fix it.
 
-Here are a few pictures of me, first with my family on the front porch in Toronto in 1961 (I'm on the bottom stair), and me doing field work n Mule deer about 10 years ago: 
+Here are a few pictures of me, first with my family on the front porch in Toronto in 1961 (I'm on the bottom stair), and me doing field work on Mule deer in Red Mountain Open Space about 10 years ago: 
 
 ```{r me_pic, echo=FALSE, out.width="500px"}
 knitr::include_graphics(c("images/Antolincki Toronto 1962.jpg","images/Antolin with deer.jpg"), auto_pdf = TRUE)
@@ -51,9 +47,11 @@ knitr::include_graphics(c("images/Antolincki Toronto 1962.jpg","images/Antolin w
 # Research Interests
 
 
-My research is focused on evolution and genetics of infectious diseases, which also led to thinking about how evolution may be applied to the medical sciences.
+My research is focused on evolution and genetics of infectious diseases, which also leads to thinking about how evolution may be applied to the medical sciences.
 
-People in my lab have focused on the epidemiology of plague in Black-tailed prairie.  This is the same bacterial pathogen responsible for massive human epidemics in medieval Europe and Asia, what’s known as the Black Death in the 1300s.  Native to Asia, plague was accidentally introduced into the western U.S. in the early 1900s and now decimates wild rodent populations throughout the western half of the U.S., along with 10-15 human cases per year.  We have used genetic analyses to trace transmission pathways.  More recently we also started work on the genetics of chronic wasting disease in mule deer northern Colorado.  This neurodegenerative disease is similar to the “mad cow disease” in Europe, and is caused by a mis-folded infectious protein called a prion.  Again, we use genetic tools to trace transmission pathways (microsatellites and RAD-seq).
+People in my lab have focused on the epidemiology of plague in Black-tailed prairie dogs.  This is the same bacterial pathogen responsible for massive human epidemics in medieval Europe and Asia, what’s known as the Black Death in the 1300s.  Native to Asia, plague was accidentally introduced into the western U.S. in the early 1900s and now decimates wild rodent populations throughout the western half of the U.S., along with 10-15 human cases per year.  We have used genetic analyses to trace transmission pathways.  
+
+More recently we also started work on the genetics of chronic wasting disease in mule deer northern Colorado.  This neurodegenerative disease is similar to the “mad cow disease” in Europe, and is caused by a mis-folded infectious protein called a prion.  Again, we use genetic tools to trace transmission pathways (microsatellites and RAD-seq).
 
 My research tends to be interdisciplinary and collaborative, and I have the great fortune of having many colleagues here at Colorado State and with other agencies Fort Collins to help us understand epidemiology and evolution of infectious diseases in natural populations.
 
