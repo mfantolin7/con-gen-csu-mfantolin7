@@ -49,81 +49,215 @@ knitr::include_graphics(c("images/Antolincki Toronto 1962.jpg","images/Antolin w
 
 My research is focused on evolution and genetics of infectious diseases, which also leads to thinking about how evolution may be applied to the medical sciences.
 
-People in my lab have focused on the epidemiology of plague in Black-tailed prairie dogs. This is the same bacterial pathogen responsible for massive human epidemics in medieval Europe and Asia, what’s known as the Black Death in the 1300s.  Native to Asia, plague was accidentally introduced into the western U.S. in the early 1900s and now decimates wild rodent populations throughout the western half of the U.S., along with 10-15 human cases per year. Along with studies of prairie dog population structure [@roach2001genetic], studies of transmission by fleas [@wilder2008oropsylla; @tripp2010flea], we used a SNP-chip to demonstrate genetic identity of plague clones in CO relative to other samples from the western US: [@lowell2015single].   
+People in my lab have focused on the epidemiology of plague in Black-tailed prairie dogs, summarized in @salkeld2016ecological. This is the same bacterial pathogen responsible for massive human epidemics in medieval Europe and Asia, what’s known as the Black Death in the 1300s.  Native to Asia, plague was accidentally introduced into the western U.S. in the early 1900s and now decimates wild rodent populations throughout the western half of the U.S., along with 10-15 human cases per year. Along with studies of prairie dog population structure [@roach2001genetic], studies of transmission by fleas [@wilder2008oropsylla; @tripp2010flea], we used a SNP-chip to demonstrate genetic identity of plague clones in CO relative to other samples from the western U.S.: [@lowell2015single].   
 
-More recently we also started work on the genetics of chronic wasting disease in mule deer northern Colorado.  This neurodegenerative disease is similar to the “mad cow disease” in Europe, and is caused by a mis-folded infectious protein called a prion.  Again, we use genetic tools to trace transmission pathways (microsatellites and RAD-seq).
+More recently we also started work on the genetics of chronic wasting disease in mule deer northern Colorado.  This neurodegenerative disease is similar to the “mad cow disease” in Europe, and is caused by a mis-folded infectious protein called a prion.  Again, we use genetic tools to trace transmission pathways (microsatellites and RAD-seq, unpublished).
 
 My research tends to be interdisciplinary and collaborative, and I have the great fortune of having many colleagues here at Colorado State and with other agencies Fort Collins to help us understand epidemiology and evolution of infectious diseases in natural populations.
 
 ## Influential papers
 
-Describe two papers that have been very influential in your research.
-The main purpose of this is learning how to cite literature in
-RMarkdown. You will have to add the citations to `references.bib` in
-BibTeX format, and then also cite them.
 
-An easy way to get the paper in BibTeX format is to find it on Google
-Scholar. Then, under the paper's link, click on the big fat quotation
-marks, and then choose the BibTex link at the bottom of the page. Then
-copy the contents into `references.bib`. For example you might paste
-this into `references.bib`.
+My favorite paper in all of evolutionary biology is @gould1979philosophical "Spandrels of San Marco and the Panglossian Paradigm."  This rhetorical masterpiece examines how to study adaptation, with the idea that many traits in organisms may not be adaptations per se, but may result as byproducts phylogenetic constraints contingent on the body plans within particular lineages.     
 
-```         
-@article{richardson1997bayesian,
-  title={On Bayesian analysis of mixtures with an unknown number of components (with discussion)},
-  author={Richardson, Sylvia and Green, Peter J},
-  journal={Journal of the Royal Statistical Society: series B (statistical methodology)},
-  volume={59},
-  number={4},
-  pages={731--792},
-  year={1997},
-  publisher={Wiley Online Library}
-}
-```
 
-Note the string before the comma on the first line. That is the cite
-key. Once you have done that, you can cite it by including
-`@richardson1997bayesian` if you don't want the name in parenthesis,
-like, "As @richardson1997bayesian introduced in their landmark paper."
-On the other hand, you can use `[@richardson1997bayesian]` if you do
-want it all in parentheses, like, "Reversible jump MCMC has been
-previously applied to the analysis of mixtures
-[@richardson1997bayesian]."
-
+Recently I was a co-organizer an of a study group at the National Institute for Mathematical and Biological Synthesis  [NimBIOS](https://legacy.nimbios.org/) in Knoxville, Tennessee that resulted in two papers on using genomic methods to study adaptation in wild populations  [@hoban2016finding;@lowry2017breaking].  The articles seem to be getting a lot of attention, both positive and negative.  
 
 
 ## The mathematics behind my research
 
-It is easy to write complex mathematics using a mathematical typesetting
-engine called TeX. Write two displayed equations that are relevant to
-your work. For a quick primer on TeX and LaTeX you can download [this
-cheatsheet](https://users.dickinson.edu/~richesod/latex/latexcheatsheet.pdf)
-and then fiddle with including things between the double dollar signs
-below: $$
-\cos\theta + i\sin\theta = e^{i\theta}
-$$ or here: $$
-\lim_{n\rightarrow \infty} \frac{1}{n}\sum_{i=1}^n X_i = EX
+Much of my work is statistical, and of course one of the most commonly used statistics in population genetics are the Fixation Indices, especially $F_{st}$.
+
+Here are two versions of $F_{st}$, one calculated from heterozygosity and one based on the variance in  allele frequencies among populations.
+
+First, based on heterozygosity: 
 $$
+F_{st} = \frac{H_T - H_S}{H_T}
+$$
+Where 
+
+|     $H_{T}$ is the total heterozygosity across all populations, 
+
+|     and
+
+|     $H_{S}$ is the average heterozygosity within populations.
+
+|
+|
+Second, from variance in allele frequencies among populations:
+$$
+F_{st} = \frac{Var_p - \bar{p}(1 - \bar{p})}{Var_p}
+$$
+Where
+
+
+|     $p$ is frequencies of an allele in a series of populations,
+
+|     $Var_{p}$ is the variance of allele frequencies across populations, and 
+
+|     $\bar{p}$ is the average allele frequency across all populations.
+
+|
+|
+A second equation that we use measures the mean kinship $\bar{k}_i$ of each individual (based on relatedness between individuals based on pedigrees) to the $n-1$ other individuals in a captive-breeding population.  
+
+
+$$
+\bar{k}_i = \sum_{j=1,j\neq i}^{n} \frac{2f_{ij}}{n-1}
+$$
+Where 
+
+|    $f_{ij}$ is the inbreeding coefficient of the offspring of two individuals in a population, 
+|    and $2f_{ij}$ is the relatedness between the two individuals, for the $n$ individuals in the pedigree.
+
+I used ChaptGPT to get some base code for the equations, but modified and upgraded.   
+
 
 ## My computing experience
 
-Describe any experience you have with any programming languages. Include
-a snippet of code in two different languages using a non-evaluated code
-block. This can be something you have previously written, or, if you
-don't have any, then find and copy a few lines of code off the web.
+I learned to program in FORTRAN back in 1983.  This was useful for the logical necessities of coding in other programs.  I have used R since abut 2004, and in 2005 took a spatial statistics course that used R (S-plus actually, but let's not quibble).  
+
+My snippet of R is below in the "Evaluating some R code section below).  
+
+A snippet of FORTRAN that asks you to input your name and print it out:
+
+1  program namer
+2  implicit none
+3  character::name
+4  print*, 'What is Your name ? '
+5  read*, name
+6  print*, 'Your Name Is',' ', name
+7  end program namer
+
 
 ## What I hope to get out of this class
 
-Give me a bullet list of three things:
+Three thing I desire:
 
--   This
--   That
--   Another
+-   To re-familarize myself with using programs to carry out population genomic analyses.
+-   To update my abilities to manipulate sequence data, including complete genomes and reduced representation methods like RAD-seq.  
+-   To apply these to data that we have for Mule deer (Rad-seq) and for the Black-footed ferret (complete genomes).  
 
 # Evaluating some R code
 
-Here, please evaluate some R code to make a plot or a figure. The goal
-here is just to realize that you can imbed R code within fenced code
-blocks and get the output rendered into the document.
+This is R-code written to analyze some immunological assays for testing a plague vaccine in Black-footed ferrets.  This was part of Debbie McCuen's MS thesis.   
+
+```{r, message=FALSE}
+# Debbie's PRNT analysis, original data in BFF vaccinia PRNT data updated v7.xlsx
+
+#  clean out your memory before beginning the analysis
+rm(list=ls(all=TRUE))
+
+#  The data
+vacciniaHI = c(43.48, 78.26, 16.54, 23.19, 23.19, 23.19, 40.58, 84.51, 15)
+vacciniaNONHI = c(46.38, 8.7, 2.02, 14.49, 14.49, 5.8, 26.09, 28.17, 0.19)
+F1VHI = c(55.77, 41.15, 36.92, 32.5, 29.42, 27.88, 33.08, 21.54, 21.54)
+F1VNONHI = c(1.79, 0.58, 6.35, 0.64, 2.47, 4.2, 29.49, 1.79, 3.04)
+
+##Paired t-test for vaccinia group - treatment is HI vs non-HI, hypothesize means are equal
+t.test(vacciniaHI, vacciniaNONHI, paired = T)
+
+##Paired t-test for F1V group - treatment is HI vs non-HI, hypothesize means are equal
+t.test(F1VHI, F1VNONHI, paired = T)
+
+##  ?? 2 sample t-test between F1VHI and VacciniaHI - hypothesize means are equal
+t.test(vacciniaHI, F1VHI)
+
+## 2 sample t-test between F1VNONHI and VacciniaNONHI, confidence interval shows the difference btw the 2, ##hypothesize means are equal
+t.test(vacciniaNONHI, F1VNONHI)
+
+## Is distribution normal?
+hist(vacciniaHI, xlim=c(0,90), ylim=c(0, 7))
+hist(F1VHI, xlim=c(0,90), ylim=c(0,7))
+hist(vacciniaNONHI, xlim=c(0,90), ylim=c(0,7))
+hist(F1VNONHI, xlim=c(0,90), ylim=c(0,7))
+
+library(car)
+library(emmeans)
+str(vacciniaHI)
+library(plyr)
+
+## Calculate student's t distribution value, t(alpha/2)=2.31 for df 8, t(alpha/2)=2.11 for df 17, t(alpha/2)=2.78 for df 4 (to calculate CIs)
+qt((1-0.05/2), 8)
+qt((1-0.05/2), 17)
+qt((1-0.05/2), 4)
+
+##Import data, R will prompt you for the filename
+vacvstrt <- read.csv(file.choose (), quote = "'") 
+
+# HI_Treatment_vs_vaccine_type.csv
+str(vacvstrt)
+
+## Make Individual a factor
+vacvstrt$Individual<-as.factor(vacvstrt$Individual)
+is.factor(vacvstrt$Individual)
+
+##Set contrasts option in R that sums to zero 
+options(contrasts = c("contr.sum", "contr.poly"))
+
+View(vacvstrt)
+
+# run a two-way ANOVA with interactions - Type 1 ANOVA table 
+Two_way_interaction<-lm(Viral_load ~ Vaccine_type * HI_Treatment, data = vacvstrt)
+anova(Two_way_interaction)
+Two_way_interaction
+
+#re-run without interaction
+Two_way<-lm(Viral_load ~ Vaccine_type + HI_Treatment, data = vacvstrt)
+anova(Two_way)
+Two_way
+
+# USE THIS
+# Re-run with interaction, but with indivudual, the "paired t-test" version of the 2-way ANOVA)
+Two_way_individual<-lm(Viral_load ~ Vaccine_type * HI_Treatment + Individual, data = vacvstrt)
+anova(Two_way_individual)
+Two_way_individual
+
+# Re-run without interaction, but with individual, the "paired t-test" version of the 2-way ANOVA)
+Two_way_individual<-lm(Viral_load ~ Vaccine_type + HI_Treatment + Individual, data = vacvstrt)
+anova(Two_way_individual)
+Two_way_individual
+
+
+#plot the data
+with(interaction.plot(Vaccine_type, HI_Treatment, Viral_load),data=vacvstrt)
+
+## Run Type 3 ANOVA table 
+Model2 <- lm(Viral_load ~ Vaccine_type*HI_Treatment, data = vacvstrt)
+Anova(Model2, type = 3)
+
+lsmeans(Model2, pairwise ~ Vaccine_type)
+
+lsmeans(Model2, pairwise ~ HI_Treatment)
+
+lsmeans(Model2, pairwise ~ Vaccine_type|HI_Treatment)
+
+## boxplot F1V vs vaccinia
+boxplot(Viral_load ~ Vaccine_type, data = vacvstrt)
+
+## boxplot HI vs non-HI
+boxplot(Viral_load ~ HI_Treatment, data = vacvstrt)
+
+library(lattice)
+library(gplots)
+library(ggplot2)
+
+## nicer boxplot HI vs non-HI
+
+
+p <-qplot(HI_Treatment, Viral_load, geom = "boxplot", data = vacvstrt) + xlab("HI Treatment") + ylab("Viral Plaque Percentage")   
+p
+
+##nicer boxplot F1V vs vaccinia
+q <-qplot(Vaccine_type, Viral_load, geom = "boxplot", data = vacvstrt) + xlab("Vaccine Type") + ylab("Viral Plaque Percentage") 
+q
+
+## wild ferret data
+wildNONHI = c(88.89, 56.35, 41.3, 56.35, 46.03)
+wildHI = c(49.2, 38.1, 63.1, 46.03, 71.03)
+
+## wild ferret paired t-test HI vs Non-HI, difference of means between each group? NO
+t.test(wildHI, wildNONHI, paired = T)
+```
 
 # Citations
