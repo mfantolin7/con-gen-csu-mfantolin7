@@ -20,7 +20,7 @@ I arrived at Colorado State University in 1992 (and am originally from rural PA 
 
 I consider myself an evolutionary and population biologist, and have taught evolution and population genetics at both undergraduate and graduate levels.  Currently I'm greatly enjoying teaching LIFE 102 (Attributes of Living Systems) to Honors students.   
 
-This life was a natural for me. We moved to PA from Canada when I was three years old, to a former egg farm on the Mason Dixon Line (the property boundary has one of the marble markers from the original survey in 1763-1767). I was partly feral as a kid, spending much time outdoors in the fields and forests surrounding our house and the nearby Tom's Creek, in view of the Blue Ridge Mountains.  My father was a philosophy professor who planted the seeds of skepticism in my mind, along with a love for Nature and the trees we transplanted to the property.  All are more-or-less still in place.
+This life was a natural for me. We moved to rural PA from Canada when I was three years old, to a former egg farm on the Mason Dixon Line (the property boundary has one of the marble markers from the original survey in 1763-1767). I was partly feral as a kid, spending much time outdoors in the fields and forests surrounding our house and the nearby Tom's Creek, in view of the Blue Ridge Mountains.  My father was a philosophy professor who planted the seeds of skepticism in my mind, along with a love for Nature and the trees we transplanted to the property.  All are more-or-less still in place.
 
 
 As part of my public outreach to science education, I was a charter member of the “Colorado Citizens for Science” advocacy group (now defunct), which supported teachers by tracking curriculum and science teaching standards for CO public schools.  I have written several articles on the “creation-evolution debates” and on science education for the general public.  More recent writings have been on the relationship between evolution and medicine, and on the evolutionary history of the Darwin family of doctors [@antolin2011evolution].    
@@ -55,16 +55,16 @@ More recently we also started work on the genetics of chronic wasting disease in
 
 My research tends to be interdisciplinary and collaborative, and I have the great fortune of having many colleagues here at Colorado State and with other agencies Fort Collins to help us understand epidemiology and evolution of infectious diseases in natural populations.
 
-## Influential papers
+## Influential Papers
 
 
-My favorite paper in all of evolutionary biology is @gould1979philosophical "Spandrels of San Marco and the Panglossian Paradigm."  This rhetorical masterpiece examines how to study adaptation, with the idea that many traits in organisms may not be adaptations per se, but may result as byproducts phylogenetic constraints contingent on the body plans within particular lineages.     
+My favorite paper in all of evolutionary biology is @gould1979philosophical "Spandrels of San Marco and the Panglossian Paradigm."  This rhetorical masterpiece examines how to study adaptation, with the idea that many traits in organisms may not be adaptations per se, but may arise as byproducts of  phylogenetic constraints, contingent on the body plans within particular lineages.  This also fits with my view of genetic neutrality, coalescence, etc.
 
 
 Recently I was a co-organizer an of a study group at the National Institute for Mathematical and Biological Synthesis  [NimBIOS](https://legacy.nimbios.org/) in Knoxville, Tennessee that resulted in two papers on using genomic methods to study adaptation in wild populations  [@hoban2016finding;@lowry2017breaking].  The articles seem to be getting a lot of attention, both positive and negative.  
 
 
-## The mathematics behind my research
+## The Mathematics Behind My Research
 
 Much of my work is statistical, and of course one of the most commonly used statistics in population genetics are the Fixation Indices, especially $F_{st}$.
 
@@ -76,9 +76,7 @@ F_{st} = \frac{H_T - H_S}{H_T}
 $$
 Where 
 
-|     $H_{T}$ is the total heterozygosity across all populations, 
-
-|     and
+|     $H_{T}$ is the total heterozygosity across all populations, and
 
 |     $H_{S}$ is the average heterozygosity within populations.
 
@@ -94,7 +92,6 @@ Where
 |     $p$ is frequencies of an allele in a series of populations,
 
 |     $Var_{p}$ is the variance of allele frequencies across populations, and 
-
 |     $\bar{p}$ is the average allele frequency across all populations.
 
 |
@@ -115,9 +112,9 @@ Where
 I used ChaptGPT to get some base code for the equations, but modified and upgraded.   
 
 
-## My computing experience
+## My Computing Experience
 
-I learned to program in FORTRAN back in 1983.  This was useful for the logical necessities of coding in other programs.  I have used R since abut 2004, and in 2005 took a spatial statistics course that used R (S-plus actually, but let's not quibble).  
+I learned to program in FORTRAN back in 1983.  This was useful for the logical necessities of coding in other programs, but was also usefule for modifying and running command-driven versions of BIOSYS (before GUI's etc.).  I have used R since abut 2004, and in 2005 took a spatial statistics course that used R (S-plus actually, but let's not quibble).  
 
 My snippet of R is below in the "Evaluating some R code section below).  
 
@@ -141,7 +138,7 @@ Three thing I desire:
 -   To update my abilities to manipulate sequence data, including complete genomes and reduced representation methods like RAD-seq.  
 -   To apply these to data that we have for Mule deer (Rad-seq) and for the Black-footed ferret (complete genomes).  
 
-# Evaluating some R code
+# Evaluating Some R Code
 
 This is R-code written to analyze some immunological assays for testing a plague vaccine in Black-footed ferrets.  This was part of Debbie McCuen's MS thesis from 2019.   
 
