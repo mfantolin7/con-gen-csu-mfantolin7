@@ -18,6 +18,7 @@ editor_options:
 
 A CHANGE$D VERSION JUST TO CHECK RSTUDIO TO GITHUB CONNECTIONS 
 
+
 I arrived at Colorado State University in 1992 (and am originally from rural PA near Gettysburg), after studying biology at the [University of Pennsylvania, BA 1981](https://www.bio.upenn.edu/), The [University of Alberta, Canada, M.Sc. 1985](https://www.ualberta.ca/biological-sciences/index.html), and [Florida State University, PhD 1990](https://www.bio.fsu.edu/)).  I am currently Professor and former department Chair of the [Biology Department](https://www.biology.colostate.edu/).
 
 I consider myself an evolutionary and population biologist, and have taught evolution and population genetics at both undergraduate and graduate levels.  Currently I'm greatly enjoying teaching LIFE 102 (Attributes of Living Systems) to Honors students.   
